@@ -5,6 +5,6 @@
     <title></title>
   </head>
   <body>
-    <h1>Blossom v1 deployment test 2</h1>
+    <h1>Blossom v1 deployment test 3 auto.php inplace</h1>
   </body>
 </html>
