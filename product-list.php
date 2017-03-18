@@ -3,6 +3,7 @@
 
   $produstListSql = "SELECT * FROM `product-list`;";
 
+  print_r($conn->query($produstListSql);
   /* Prepare statement */
   if($res = $conn->query($produstListSql)){
     //print_r($res);
