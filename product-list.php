@@ -3,7 +3,7 @@
 
   $produstListSql = "SELECT * FROM `product-list`;";
 
-  $res = $conn->query($produstListSql));
+  $res = $conn->query($produstListSql);
  ?>
  <!DOCTYPE html>
  <html>
