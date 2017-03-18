@@ -2,7 +2,7 @@
   include_once "php/db-connect.php";
 
   $produstListSql = "SELECT * FROM `product-list`;";
-  $resultArray = [];
+  $resultArray = array();
   $i = 0;
   $res = $conn->query($produstListSql);
   while($row = $res->fetch_assoc()) {
