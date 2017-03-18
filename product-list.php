@@ -2,8 +2,11 @@
   include_once "php/db-connect.php";
 
   $produstListSql = "SELECT * FROM `product-list`;";
-
+  $resultArray[];
   $res = $conn->query($produstListSql);
+  while($row = $res->fetch_assoc()) {
+    $resultArray .= $row;
+  }
  ?>
  <!DOCTYPE html>
  <html>
@@ -19,13 +22,11 @@
        <div class="menu-list">
 
          <?php
-            echo "<h1>".$_GET[0]['product-category']."</h1>";
-           while($row = $res->fetch_assoc()) {
-            print_r($row);
+             echo "<h1>".$resultArray['product-category']."</h1>";
              echo "<div class='menu-item col-3'>";
-             echo "<h2>".$row['product-name']."</h2>";
-             echo "<h2 class='product-cost'>".$row['product-cost']."</h2>";
-             echo "<p class='product-desc'>".$row['product-desc']."</p>";
+             echo "<h2>".$resultArray['product-name']."</h2>";
+             echo "<h2 class='product-cost'>".$resultArray['product-cost']."</h2>";
+             echo "<p class='product-desc'>".$resultArray['product-desc']."</p>";
              echo "</div>";
            } ?>
        </div>
