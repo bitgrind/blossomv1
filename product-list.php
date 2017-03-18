@@ -5,6 +5,7 @@
 
   $res = $conn->query($produstListSql);
   $row = $res->fetch_assoc();
+  print_r($row);
  ?>
  <!DOCTYPE html>
  <html>
@@ -21,7 +22,7 @@
 
          <?php
             echo "<h1>".$row['product-category']."</h1>";
-           while($row) {
+           for($row as $key => $val) {
             print_r($row);
              echo "<div class='menu-item col-3'>";
              echo "<h2>".$row['product-name']."</h2>";
