@@ -5,7 +5,7 @@
 
   $res = $conn->query($produstListSql);
   print_r($_GET);
-  print_r($globals);
+  print_r($GLOBALS);
  ?>
  <!DOCTYPE html>
  <html>
