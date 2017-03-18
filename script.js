@@ -1,7 +1,7 @@
 $(function() {
-    var itemCounter = 1;
+    var itemCounter = 2;
 
-    $("#addCat").click(function() {
+    $("#addItem").click(function() {
         $("<div />", {
                 id: "item" + itemCounter
             })
@@ -15,7 +15,33 @@ $(function() {
                 type: "text",
                 name: "item" + itemCounter
             }))
-            .appendTo("#cat1");
+            .appendTo("#cat");
         itemCounter++;
+    }); //End of add items to category
+
+    $("#addCat").click(function() {
+        $("<div />", {
+                class: "form-group",
+                id: "cat" + itemCounter
+            })
+            .append($("<label>" + "Category" + "</label>"))
+            .append($("<input />", {
+                type: "text",
+                name: "category" + itemCounter
+            }))
+            .append($("<button>" + "Add item" + "</button>", {
+                type: "button",
+                id: "addItem" + itemCounter
+            }))
+            .appendTo("#cat");
+        itemCounter++;
+
+    }); //add category button
+
+    $("#form").submit(function() {
+        event.preventDefault();
+
     });
+
+
 }); //jQuery
