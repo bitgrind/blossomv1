@@ -13,9 +13,10 @@
      <title>Product list</title>
    </head>
    <body>
-     <h1>Product List</h1>
+     <h1>Product List Changes</h1>
      <main>
        <div class="menu-list">
+
          <?php
            while($row = $res->fetch_assoc()) {
              echo "<div class='menu-item'><h1>".$row['product-catagroy']."</h1>";
