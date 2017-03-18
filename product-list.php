@@ -26,6 +26,7 @@
 
          <?php
           foreach($resultArray as $key => $val)
+            echo "key:".$key." , val: ". $val;
              echo "<h1>".$key['product-category']."</h1>";
              echo "<div class='menu-item col-3'>";
              echo "<h2>".$key['product-name']."</h2>";
