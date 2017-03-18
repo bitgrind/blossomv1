@@ -3,9 +3,11 @@
 
   $produstListSql = "SELECT * FROM `product-list`;";
   $resultArray[];
+  $i = 0;
   $res = $conn->query($produstListSql);
   while($row = $res->fetch_assoc()) {
-    $resultArray .= $row;
+    $resultArray[i] .= $row;
+    $i++;
   }
  ?>
  <!DOCTYPE html>
