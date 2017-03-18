@@ -4,7 +4,6 @@
   $produstListSql = "SELECT * FROM `product-list`;";
 
   $res = $conn->query($produstListSql);
-  print_r($res);
  ?>
  <!DOCTYPE html>
  <html>
@@ -20,13 +19,13 @@
        <div class="menu-list">
 
          <?php
-            echo "<h1>".$row['product-category']."</h1>";
-           for($res as $key => $val) {
-            print_r($res);
+            echo "<h1>".$_GET[0]['product-category']."</h1>";
+           while($row = $res->fetch_assoc()) {
+            print_r($row);
              echo "<div class='menu-item col-3'>";
-             echo "<h2>".$key['product-name']."</h2>";
-             echo "<h2 class='product-cost'>".$key['product-cost']."</h2>";
-             echo "<p class='product-desc'>".$key['product-desc']."</p>";
+             echo "<h2>".$row['product-name']."</h2>";
+             echo "<h2 class='product-cost'>".$row['product-cost']."</h2>";
+             echo "<p class='product-desc'>".$row['product-desc']."</p>";
              echo "</div>";
            } ?>
        </div>
