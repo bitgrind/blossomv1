@@ -4,7 +4,6 @@
   $produstListSql = "SELECT * FROM `product-list`;";
 
   $res = $conn->query($produstListSql));
-  $conn->close();
  ?>
  <!DOCTYPE html>
  <html>
