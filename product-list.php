@@ -24,11 +24,12 @@
        <div class="menu-list">
 
          <?php
-             echo "<h1>".$resultArray['product-category']."</h1>";
+          foreach($resultArray as $key => $val)
+             echo "<h1>".$key['product-category']."</h1>";
              echo "<div class='menu-item col-3'>";
-             echo "<h2>".$resultArray['product-name']."</h2>";
-             echo "<h2 class='product-cost'>".$resultArray['product-cost']."</h2>";
-             echo "<p class='product-desc'>".$resultArray['product-desc']."</p>";
+             echo "<h2>".$key['product-name']."</h2>";
+             echo "<h2 class='product-cost'>".$key['product-cost']."</h2>";
+             echo "<p class='product-desc'>".$key['product-desc']."</p>";
              echo "</div>";
           ?>
        </div>
