@@ -30,7 +30,7 @@
              echo "<h2 class='product-cost'>".$resultArray['product-cost']."</h2>";
              echo "<p class='product-desc'>".$resultArray['product-desc']."</p>";
              echo "</div>";
-           } ?>
+          ?>
        </div>
      </main>
    </body>
