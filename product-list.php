@@ -27,11 +27,11 @@
          <?php
           foreach($resultArray as $key => $val)
             echo "key:".$key." , val: ". $val;
-             echo "<h1>".$key['product-category']."</h1>";
+             echo "<h1>".$val['product-category']."</h1>";
              echo "<div class='menu-item col-3'>";
-             echo "<h2>".$key['product-name']."</h2>";
-             echo "<h2 class='product-cost'>".$key['product-cost']."</h2>";
-             echo "<p class='product-desc'>".$key['product-desc']."</p>";
+             echo "<h2>".$val['product-name']."</h2>";
+             echo "<h2 class='product-cost'>".$val['product-cost']."</h2>";
+             echo "<p class='product-desc'>".$val['product-desc']."</p>";
              echo "</div>";
           ?>
        </div>
