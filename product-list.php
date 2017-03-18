@@ -8,6 +8,7 @@
     //print_r($res);
   }
   $conn->close();
+  print_r($_GET);
  ?>
  <!DOCTYPE html>
  <html>
@@ -19,7 +20,8 @@
      <h1>Product List</h1>
      <?php
        while($row = $res->fetch_assoc()) {
-         echo $row;
+         print_r($row);
+         echo "<br>";
        }
      ?>
    </body>
