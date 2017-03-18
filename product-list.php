@@ -19,7 +19,7 @@
      <h1>Product List</h1>
      <?php
        while($row = $res->fetch_assoc()) {
-         print_r($row);
+         echo $row;
        }
      ?>
    </body>
