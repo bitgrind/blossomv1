@@ -3,16 +3,15 @@
 
   $produstListSql = "SELECT * FROM `product-list`;";
 
-  print_r($conn->query($produstListSql);
+  print_r($conn);
   /* Prepare statement */
-  if($res = $conn->query($produstListSql)){
-    //print_r($res);
-    while($row = $res->fetch_assoc()) {
-      print_r($row);
-    }
-  }
+  // if($res = $conn->query($produstListSql)){
+  //   //print_r($res);
+  //   while($row = $res->fetch_assoc()) {
+  //     print_r($row);
+  //   }
+  // }
   $conn->close();
-  print_r($_GET);
  ?>
  <!DOCTYPE html>
  <html>
