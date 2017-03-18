@@ -1,17 +1,16 @@
 <?php
-  include_once "db-connect.php";
+  include_once "php/db-connect.php";
 
   $produstListSql = "SELECT * FROM `product-list`;";
 
-  print_r($conn);
   /* Prepare statement */
-  // if($res = $conn->query($produstListSql)){
-  //   //print_r($res);
-  //   while($row = $res->fetch_assoc()) {
-  //     print_r($row);
-  //   }
-  // }
-  //$conn->close();
+  if($res = $conn->query($produstListSql)){
+    //print_r($res);
+    while($row = $res->fetch_assoc()) {
+      print_r($row);
+    }
+  }
+  $conn->close();
  ?>
  <!DOCTYPE html>
  <html>
