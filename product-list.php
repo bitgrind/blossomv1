@@ -1,5 +1,5 @@
 <?php
-  include "db-connect.php";
+  include_once "db-connect.php";
 
   $produstListSql = "SELECT * FROM `product-list`;";
 
