@@ -1,6 +1,6 @@
 <?php
 $dbHost = "localhost";
 $dbName = "blossomv1";
-$dbUser = "blossomdb";
-$dbPw   = "bl0ss0m!";
+$dbUser = "blossomv1";
+$dbPw   = "bl0ss0mv1!";
 ?>
