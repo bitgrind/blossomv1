@@ -9,6 +9,7 @@
     $resultArray[$i] = $row;
     $i++;
   }
+  print_r($resultArray);
  ?>
  <!DOCTYPE html>
  <html>
