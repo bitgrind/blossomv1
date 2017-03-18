@@ -11,7 +11,7 @@
   //     print_r($row);
   //   }
   // }
-  $conn->close();
+  //$conn->close();
  ?>
  <!DOCTYPE html>
  <html>
