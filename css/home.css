@@ -1,0 +1,60 @@
+
+
+h1,h2,h3,h4,h5,h6 {padding:0;margin:0;}
+ul, li {list-style: none;padding:0;margin:0;clear:both;}
+
+main {position: relative;width:100%;}
+
+.content {clear:both;margin-bottom:10%;}
+
+.html-tag-standards li {width:30%;display:inline-block;}
+
+
+/* PAGE STRUCTURE */
+header {}
+main {position: relative;width:100%;}
+footer {}
+
+.page-wrapper {width:90%;margin:auto;}
+
+.col-9 {width:10%;margin-left:1.23%;}
+.col-9:first-child {margin-left:0%;}
+
+.col-8 {width:11.6%;margin-left:1%;}
+.col-8:first-child {margin-left:0%;}
+
+.col-7 {width:13.4%;margin-left:1%;}
+.col-7:first-child {margin-left:0%;}
+
+.col-6 {width:15.8%;margin-left:1.03%;}
+.col-6:first-child {margin-left:0%;}
+
+.col-5 {width:19%;margin-left:1.22%;}
+.col-5:first-child {margin-left:0%;}
+
+.col-4 {width:24%;margin-left:1.3%;}
+.col-4:first-child {margin-left:0%;}
+
+.col-3 {width:32%;margin-left:2%;}
+.col-3:first-child {margin-left:0;}
+
+.col-2 {width:49%;margin-left:2%;}
+.col-2:first-child {margin-left: 0;}
+
+.col-1 {width:100%;}
+
+.col-1, .col-1-5, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,  .col-8, .col-9 {margin-top:.5%;margin-bottom:.5%;float:left;background-color: rgba(0,0,0,.4);border-radius: 5px;height:50px;}
+.col-1:after, .col-2:after, .col-3:after, .col-4:after, .col-5:after, .col-6:after, .col-7:after,  .col-8:after {clear:both;content:"";width:100%;}
+
+/* mock styles */
+htmlmock {width:100%;background-color:rgba(255,0,0,.2);display: block;z-index: 10;position: relative;border:dashed 3px red;}
+htmlmock:before {content:"<html>";top:0;}
+bodymock {width:90%;background-color:rgba(0,0,255,.2);display: block;z-index: 10;margin:auto;}
+bodymock:before {content:"<body>";top:0;}
+main header, main footer {z-index: 20;position: relative;height:100px;background-color:rgba(0,0,0,.5);border-radius: 5px;margin-bottom:1%;margin-top:1%;}
+main header:before {content:"<header>";position: absolute;top:0;}
+main footer:before {content:"<footer>";position: absolute;top:0;}
+main main {padding:2% 5%;width:90%;clear:both;background-color:rgba(0,0,0,.5);border-radius: 5px;}
+main main:before {content:"<main>";position: absolute;top:0;}
+main main > div {border-radius: 5px;}
+main main > div:after {clear:both;width:100%;content:"";display:block;}
