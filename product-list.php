@@ -5,7 +5,7 @@
 
   /* Prepare statement */
   if($_GET["contentId"]) {
-    if($res = $conn->query($$produstListSql)){
+    if($res = $conn->query($produstListSql)){
       //print_r($res);
       while($row = $res->fetch_assoc()) {
         print_r($row);
