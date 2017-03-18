@@ -13,4 +13,13 @@
   $conn->close();
   print_r($_GET);
  ?>
-<h1>product-list</h1>
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title>Product list</title>
+   </head>
+   <body>
+     <h1>Product List</h1>
+   </body>
+ </html>
