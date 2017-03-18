@@ -19,7 +19,7 @@
        <div class="menu-list">
 
          <?php
-            echo "<h1>".$row['product-categroy']."</h1>";
+            echo "<h1>".$row['product-category']."</h1>";
            while($row = $res->fetch_assoc()) {
             print_r($row);
              echo "<div class='menu-item col-3'>";
