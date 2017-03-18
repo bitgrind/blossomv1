@@ -15,7 +15,7 @@
    </head>
    <body>
      <h1>Product List Changes</h1>
-     <main>
+     <main class="content">
        <div class="menu-list">
 
          <?php
