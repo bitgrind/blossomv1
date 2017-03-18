@@ -1,6 +1,6 @@
 .menu-list {}
 
-.menu-item {}
+.menu-item {padding:1%;}
 .menu-item h2 {display:inline-block;}
-.menu-item .menu-cost {float:right;}
-.menu-item p {margin:0 0 30px 10px;}
+.menu-item .product-cost {float:right;}
+.menu-item p {margin:5px 0 0px 10px;}
