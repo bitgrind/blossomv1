@@ -6,7 +6,7 @@
   $i = 0;
   $res = $conn->query($produstListSql);
   while($row = $res->fetch_assoc()) {
-    $resultArray[i] = $row;
+    $resultArray[$i] = $row;
     $i++;
   }
  ?>
